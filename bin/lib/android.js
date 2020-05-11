@@ -8,7 +8,7 @@ module.exports = function (context) {
 		cordova_lib = require('cordova-lib'),
 		ConfigParser = cordova_lib.configparser,
 		cordova_util = require('cordova-lib/src/cordova/util'),
-		fs = require("./filesystem")(Q, require('fs'), path), 
+		fs = require("./filesystem")(Q, require('fs'), path),
 		platforms = {};
 
 	// fs, path, ET, cordova_util, ConfigParser
@@ -212,7 +212,7 @@ module.exports = function (context) {
 
 		return fs.exists('platforms/android')
 			// Remove preferences xml file
-			.then(function () { return fs.unlink('platforms/android/res/xml/apppreferences.xml'); })
+			.then(function () { return fs.unlink('platforms/android/app/src/main/res/xml/apppreferences.xml'); })
 
 			// Remove localization resource file
 			.then(function (prefs) { return fs.unlink('platforms/android/res/values/apppreferences.xml'); })
