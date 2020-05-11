@@ -10,10 +10,10 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-lib": "^9.0.0",
+    "elementtree": "~0.1.6",
     "plist": "~1.0.1",
     "q": "~1.4.1",
-    "elementtree": "~0.1.6",
-    "xcode": "^3.0.0"
+    "xcode": "~0.8.2"
   },
   "devDependencies": {
     "jasmine-node": "^1.14.5"

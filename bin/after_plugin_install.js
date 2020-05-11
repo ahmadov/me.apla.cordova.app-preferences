@@ -6,7 +6,7 @@ module.exports = function (context) {
 		fs = require("./lib/filesystem")(Q, require('fs'), path),
 		settings = require("./lib/settings")(fs, path),
 		android = require("./lib/android")(context),
-		ios = require("./lib/ios")(Q, fs, path, require('plist'), require('xcode')); 
+		ios = require("./lib/ios")(Q, fs, path, require('plist'), require('xcode'));
 
 	return settings.get()
 		.then(function (config) {
